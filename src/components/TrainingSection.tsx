@@ -2,6 +2,7 @@ import TrainingCard from "./TrainingCard";
 import { Button } from "@/components/ui/button";
 import { courses } from "@/config/courses";
 import { CONTACT_SUPPORT_URL } from "@/config/links";
+import RegistrationForm from "./RegistrationForm";
 
 const trainings = courses as any;
 

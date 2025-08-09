@@ -113,11 +113,11 @@ const RegistrationForm = ({ trainings, defaultTrainingId, trigger, priceOverride
 
   return (
     <Dialog open={open} onOpenChange={setOpen}>
-      <DialogTrigger asChild>
+      <div onClick={() => setOpen(true)}>
         {trigger ?? (
           <Button aria-label="Open registration form" className="shadow-button">Register</Button>
         )}
-      </DialogTrigger>
+      </div>
       <DialogContent aria-describedby="registration-description">
         <DialogHeader>
           <DialogTitle>Almost done! Secure payment ahead.</DialogTitle>
